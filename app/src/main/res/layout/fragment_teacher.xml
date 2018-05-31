@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgray"
+    tools:context="com.example.attaurrahman.attendanceapp.fragment.TeacherFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edith_text_height"
+        android:text="Teacher"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/hedercolor"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tvUpdateAttendance"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:text="Update Attendance"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@color/layout_color"/>
+        <TextView
+            android:id="@+id/tvCheckAttendance"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:text="Check Attendance"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@color/layout_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvAddStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@color/layout_color"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Student Details"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_attendance_between_date"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@color/layout_color"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="Attendance Between Date"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

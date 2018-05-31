@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edith_text_height">50dp</dimen>
+    <dimen name="margin_top_edithtext">10dp</dimen>
+    <dimen name="margin_top_button">30dp</dimen>
+    <dimen name="top_margin_textview">10dp</dimen>
+</resources>

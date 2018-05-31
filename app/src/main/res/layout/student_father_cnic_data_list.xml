@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:id="@+id/ll_student_father_cnic_record">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/layout_color">
+
+            <LinearLayout
+                android:id="@+id/ll_title_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@color/sherpa_blue">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:baselineAligned="false"
+                    android:text="Name" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.80"
+                    android:textColor="@color/white"
+                    android:baselineAligned="false"
+                    android:text="Class" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.10"
+                    android:textColor="@color/white"
+                    android:baselineAligned="false"
+                    android:text="Roll Number"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.10"
+                    android:textColor="@color/white"
+                    android:baselineAligned="false"
+                    android:text="Attendance"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_date_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:text="Date" />
+
+                <TextView
+                    android:id="@+id/tvStudentNameFcnic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/tvStudentClassFcnic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.80"
+                    android:baselineAligned="false"
+                    android:text="Class" />
+
+                <TextView
+                    android:id="@+id/tvStudentRollNumberFcnic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.10"
+                    android:baselineAligned="false"
+                    android:text="Roll Number"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tvStudentAttendanceFcnic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.10"
+                    android:baselineAligned="false"
+                    android:text="Attendance"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.attaurrahman.attendanceapp.fragment.UpdateAttendanceFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edith_text_height"
+            android:text="Update Attendance"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/hedercolor"
+            />
+        />
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tvUpadateAttendanceDate"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Date"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/title_color"
+        android:textColor="@color/bel_grey_text"/>
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/lvUpdateAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:dividerHeight="15dp"
+        android:divider="@color/darkblue"></ListView>
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/rv_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"/>
+
+    <com.daprlabs.cardstack.SwipeFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:swipedeck="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/fragment_container">
+
+        <com.daprlabs.cardstack.SwipeDeck
+            android:id="@+id/swipe_deck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:layout_marginTop="20dp"
+            swipedeck:card_spacing="10dp"
+            swipedeck:max_visible="3"
+            swipedeck:render_above="true"
+            swipedeck:rotation_degrees="15"
+            swipedeck:opacity_end="0.33"
+            android:layout_gravity="center"/>
+
+    </com.daprlabs.cardstack.SwipeFrameLayout>
+
+
+</LinearLayout>

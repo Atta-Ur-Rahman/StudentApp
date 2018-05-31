@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/layout_color"
+    tools:context="com.example.attaurrahman.attendanceapp.fragment.AddStudentFragment">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edith_text_height"
+        android:text="Add Student"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/hedercolor"/>
+<!--
+    <ImageView
+        android:id="@+id/ivAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/add"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        />-->
+
+
+
+</FrameLayout>
+    <LinearLayout
+        android:id="@+id/llAddStudent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/edith_text_height"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="30dp"
+            android:background="@color/hedercolor"/>
+        <EditText
+            android:id="@+id/etStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/squreline"
+            android:hint="Student Name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roll Number"
+            android:layout_marginTop="@dimen/margin_top_edithtext"
+            android:background="@color/hedercolor"/>
+        <EditText
+            android:id="@+id/etRollNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:background="@drawable/squreline"
+            android:hint="Student Roll Nmber"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:layout_marginTop="@dimen/margin_top_edithtext"
+            android:background="@color/hedercolor"/>
+        <EditText
+            android:id="@+id/etClass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/squreline"
+            android:hint="Student Class"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Father CNIC"
+            android:layout_marginTop="@dimen/margin_top_edithtext"
+            android:background="@color/hedercolor"/>
+        <EditText
+            android:id="@+id/etFatherCNIC"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:background="@drawable/squreline"
+            android:hint="Student Father CNIC"/>
+
+        <ImageView
+            android:id="@+id/iv_add_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/margin_top_edithtext"
+            android:src="@drawable/add"/>
+
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_button"
+            android:background="@color/cardview_light_background"
+            android:text="Save"/>
+
+
+    </LinearLayout>
+</LinearLayout>

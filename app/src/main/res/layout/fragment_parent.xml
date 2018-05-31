@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.attaurrahman.attendanceapp.fragment.ParentFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Parent"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@color/hedercolor"/>
+    <LinearLayout
+        android:id="@+id/ll_title_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/title_color"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:text="Name"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.10"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="Class"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.10"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="Attendance"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_parent_cnic_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etFatherName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:hint="Enter Father Name"
+            android:background="@color/layout_color"/>
+
+
+        <EditText
+            android:id="@+id/etFatherCnic"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:hint="Enter Father CNIC"
+            android:layout_marginTop="10dp"
+            android:background="@color/layout_color"/>
+
+
+
+        <Button
+            android:id="@+id/btnCnicSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Submit"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_parent_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_father_cnic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>

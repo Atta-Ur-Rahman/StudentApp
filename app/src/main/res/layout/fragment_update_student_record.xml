@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/title_color"
+    tools:context="com.example.attaurrahman.attendanceapp.fragment.UpdateStudentRecordFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edith_text_height"
+            android:text="Upadate Student Record"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/hedercolor" />
+        <!--
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/add"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                />-->
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/llAddStudent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/edith_text_height"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="30dp"
+            android:background="@color/hedercolor"/>
+
+        <EditText
+            android:id="@+id/et_update_student_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/squreline"
+            android:hint="Enter New Name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roll Number"
+            android:layout_marginTop="@dimen/margin_top_edithtext"
+            android:background="@color/hedercolor"/>
+        <EditText
+            android:id="@+id/et_update_student_roll_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:background="@drawable/squreline"
+            android:hint="Enter New Roll Nmber"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:layout_marginTop="@dimen/margin_top_edithtext"
+            android:background="@color/hedercolor"/>
+        <EditText
+            android:id="@+id/et_update_student_class"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/squreline"
+            android:hint="Enter New Class"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Father CNIC"
+            android:layout_marginTop="@dimen/margin_top_edithtext"
+            android:background="@color/hedercolor"/>
+        <EditText
+            android:id="@+id/et_update_student_father_CNIC"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:background="@drawable/squreline"
+            android:hint="Enter New Father CNIC"/>
+
+
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_button"
+            android:background="@color/cardview_light_background"
+            android:text="Update"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
